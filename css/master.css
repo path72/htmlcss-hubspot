@@ -42,39 +42,30 @@ a {
 }
 
 /*************************************
-    TOP HEADER
+    HEADER
 */
-.top_header {
-  /* position: fixed; */
-  /* top: 0; */
-  /* height: 80px; */
+header {
   line-height: 80px;
   text-transform: capitalize;
-  background-color: #F4F9FD;
-  /* background-color: rgba(126, 174, 255, 0.55); */
 }
-.top_header ul {
+header ul {
   list-style: none;
 }
-.top_header ul li {
+header ul li {
   display: inline-block;
 }
-.top_header.float_l ul li {
+header .float_l ul li {
   padding: 0 20px;
 }
-.top_header.float_l ul li:first-child {
+header .float_l ul li:first-child {
   padding-left: 0;
-  border-right: 1px solid #32495b;
-  line-height: 100%;
 }
-.top_header.float_r ul li {
+header .float_r ul li {
   padding: 0 10px;
 }
-.top_header.float_r ul li:last-child {
+header .float_r ul li:last-child {
   padding-right: 0;
 }
-
-
 .fa-globe-europe:before {
     content: "\f7a2";
 }
@@ -85,18 +76,42 @@ a {
     content: "\f002";
     color: #0fa7be;
 }
+
+/*************************************
+    TOP HEADER
+*/
+header .h_top {
+  /* position: fixed; */
+  /* top: 0; */
+  background-color: #F4F9FD;
+}
+header .h_top .float_l ul li:first-child {
+  border-right: 1px solid #32495b;
+  line-height: 100%;
+}
+
 /*************************************
     BOTTOM HEADER
 */
-.bottom_header {
+header .h_bottom {
   /* margin-top: 50px;  */
   /* fixed header height */
-  height: 300px;
-  /* background-color: white; */
-  background-color: rgba(141, 245, 120, 0.54);
-
+  /* height: 80px; */
+  line-height: 80px;
+  background-color: white;
+  /* background-color: rgba(141, 245, 120, 0.54); */
+}
+header .h_bottom img {
+  vertical-align: middle;
 }
 
+/*************************************
+  JUMBOTRON
+*/
+.jumbotron {
+  height: 700px;
+  background-color: #FFF4EF;
+}
 
 
 
