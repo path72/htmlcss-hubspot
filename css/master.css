@@ -81,9 +81,12 @@ header .float_r ul li:last-child {
     TOP HEADER
 */
 header .h_top {
-  /* position: fixed; */
-  /* top: 0; */
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
   background-color: #F4F9FD;
+  border-bottom: 1px solid #32495b;
 }
 header .h_top .float_l ul li:first-child {
   border-right: 1px solid #32495b;
@@ -94,12 +97,9 @@ header .h_top .float_l ul li:first-child {
     BOTTOM HEADER
 */
 header .h_bottom {
-  /* margin-top: 50px;  */
-  /* fixed header height */
-  /* height: 80px; */
+  margin-top: 80px; /* fixed top header height */
   line-height: 80px;
   background-color: white;
-  /* background-color: rgba(141, 245, 120, 0.54); */
 }
 header .h_bottom img {
   vertical-align: middle;
@@ -144,6 +144,14 @@ header .h_bottom img {
   background-color: #AFEBE4;
   border-top: 3px solid #33475B;
   border-bottom: 3px solid #33475B;
+}
+
+/*************************************
+    SECTION 1 - DETAILS
+*/
+.section1 {
+  height: 500px; /* TODO: remove */
+  background-color: #F4F9FD;
 }
 
 
