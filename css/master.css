@@ -15,16 +15,16 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   color: #32495b;
   min-width: 1000px;
-  /* background-size: 1700px;
-  background-image: url("../img/hubspot-screen.png"); */
-}
-header {
 }
 .w70 {
   width: 70%;
+  margin: 0 auto;
+}
+.w50 {
+  width: 50%;
   margin: 0 auto;
 }
 .float_l {
@@ -115,19 +115,16 @@ header .h_bottom img {
   background-image: url("../img/jumbotron.png");
   background-size: 1450px;
   background-position: right top;
+  background-repeat: no-repeat;
 }
 .payoff {
   width: 50%;
 }
 .payoff_title h1 {
   display: inline-block;
-  font-size: 2.8em;
+  font-size: 3em;
   line-height: 1.3em;
-  margin: 60px 0 30px 0;
-}
-.payoff_subtitle {
-  font-size: 0.9em;
-  line-height: 2em;
+  margin: 60px 0 20px 0;
 }
 .payoff .btn {
   display: inline-block;
@@ -140,7 +137,7 @@ header .h_bottom img {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 80px;
+  height: 90px;
   background-color: #AFEBE4;
   border-top: 3px solid #33475B;
   border-bottom: 3px solid #33475B;
@@ -152,8 +149,27 @@ header .h_bottom img {
 .section1 {
   height: 500px; /* TODO: remove */
   background-color: #F4F9FD;
+  text-align: center;
+
+}
+.section1 img {
+  width: 250px;
+  margin-top: 50px;
+}
+.section1 .title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
+
+/*************************************
+    TEXTS
+*/
+.subtitle {
+  font-size: 0.9em;
+  line-height: 2em;
+}
 
 /*************************************
     BUTTONS
