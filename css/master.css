@@ -154,11 +154,6 @@ header .h_bottom img {
 .section_cube img {
   width: 250px;
 }
-.section_cube .title {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
 
 /*************************************
     SECTION 1 BOX
@@ -218,6 +213,47 @@ header .h_bottom img {
 /*************************************
     SECTION TABLE
 */
+.section_table {
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  background-color: #00B3B0;
+}
+.table {
+  width: 100%;
+  margin: 50px 0;
+}
+.table .row1 {
+  border-bottom: 1px solid white;
+}
+.table .cell {
+  display: inline-block;
+  width: 24.6%;
+  height: 50%;
+  padding: 25px;
+  border-right: 1px solid white;
+}
+.table .cell:last-child {
+  border-right: 0;
+}
+.table img {
+  max-width: 100px;
+  height: 33px;
+}
+.table .value {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 10px;
+}
+.table .fa-plus {
+  font-size: 0.3em;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.table .text {
+  font-size: 0.75em;
+}
+
 
 /*************************************
     SECTION CLIENTS
@@ -289,6 +325,11 @@ li {
 /*************************************
     TEXTS
 */
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 .subtitle {
   font-size: 0.9em;
   line-height: 2em;
