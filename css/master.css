@@ -17,7 +17,7 @@ body {
   font-style: normal;
   font-weight: 500;
   color: #32495b;
-  min-width: 1120px;
+  min-width: 1160px;
   background-color: #F4F9FD;
 }
 .w70 {
@@ -122,14 +122,11 @@ header .h_bottom img {
   display: inline-block;
   font-size: 3em;
   line-height: 1.3em;
-  margin: 60px 0 20px 0;
+  margin-top: 60px;
 }
 .payoff .btn {
   display: inline-block;
-  margin: 30px 0;
-}
-.payoff_smalltext {
-  font-size: 0.75em;
+  margin: 10px 0 30px 0;
 }
 .strip {
   position: absolute;
@@ -202,7 +199,10 @@ header .h_bottom img {
   width: 100%;
   margin-top: 30px;
 }
-.b3 h3 {
+.b3 .box_title {
+  margin-bottom: 30px;
+}
+.b3 h3:not(.box_title) {
   margin: 30px 0;
 }
 .b3 .btn {
@@ -263,6 +263,9 @@ header .h_bottom img {
     SECTION GROWING
 */
 
+/*************************************
+    FOOTER
+*/
 
 
 
@@ -334,6 +337,9 @@ li {
   font-size: 0.9em;
   line-height: 2em;
   margin: 30px 0 20px 0;
+}
+.smalltext {
+  font-size: 0.75em;
 }
 .box_title {
   font-size: 1.4em;
