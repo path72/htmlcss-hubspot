@@ -99,6 +99,9 @@ header .h_bottom {
 header .h_bottom img {
   vertical-align: middle;
 }
+.fa-chevron-down {
+  margin-left: 10px;
+}
 
 /*************************************
   JUMBOTRON
@@ -160,64 +163,105 @@ header .h_bottom img {
 /*************************************
     SECTION 1 BOX
 */
-.box1_left {
+.b1_left {
   height: 100%;
   width: 30%;
   padding: 5%;
   text-align: center;
-  /* border: 1px solid black; */
 }
-.box1_left img {
-  height: 100px;
-  margin-bottom: 40px;
+.b1_left .btn {
+  display: inline-block;
 }
-.box1_right {
+.b1_right {
   height: 100%;
   width: 70%;
   padding: 5%;
-  /* border: 1px solid black; */
 }
-.box1_right .subtitle {
-  margin: 20px 0;
-}
-.box1_right .text_area {
+.b1_right .text_area {
   height: 100%;
   margin-bottom: 30px;
 }
-.box1_right .text_area .float_l {
+.b1_right .text_area .float_l {
   width: 40%;
 }
-.box1_right .text_area .float_r {
+.b1_right .text_area .float_r {
   width: 60%;
   padding-top: 10px;
 }
-.box1_right .h_list li {
-  padding: 0 20px;
+.b1_right .h_list li {
+  padding: 0 10px;
 }
-.box1_right .h_list li:first-child {
+.b1_right .h_list li:first-child {
   padding-left: 0;
 }
 .fa-check-circle {
   color: #FE785A;
+  margin-right: 10px;
 }
 
 /*************************************
     SECTION 3 BOXES
 */
+.b3 hr {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+.b3 h3 {
+  margin: 30px 0;
+}
+.b3 .btn {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+/*************************************
+    SECTION TABLE
+*/
+
+/*************************************
+    SECTION CLIENTS
+*/
+
+/*************************************
+    SECTION GROWING
+*/
+
+
+
+
+
+
+
+
 
 
 
 
 /*************************************
-    HORIZONTAL LIST
+    LISTS
 */
-.h_list {
+ul {
   list-style: none;
+}
+.v_list {
+  text-align: left;
+}
+li {
+  text-transform: capitalize;
 }
 .h_list li {
   display: inline-block;
-  text-transform: capitalize;
 }
+
+/*************************************
+    IMAGES
+*/
+.section_box img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
 
 /*************************************
     BOXES
@@ -235,6 +279,8 @@ header .h_bottom img {
 }
 .b3 {
   width: 30%;
+  padding: 20px 25px;
+  text-align: center;
 }
 .b3middle {
   margin: 0 5%;
@@ -246,9 +292,13 @@ header .h_bottom img {
 .subtitle {
   font-size: 0.9em;
   line-height: 2em;
+  margin: 30px 0 20px 0;
 }
 .box_title {
-  font-size: 1.5em;
+  font-size: 1.4em;
+}
+.list_text {
+  font-size: 0.9em;
 }
 
 /*************************************
