@@ -258,6 +258,31 @@ header .h_bottom img {
 /*************************************
     SECTION CLIENTS
 */
+.section_clients {
+  height: 600px;
+  /* TODO: remove height */
+  background-color: white;
+  padding: 50px 70px;
+}
+.section_clients .float_l {
+  width: 40%;
+  padding-right: 100px;
+}
+.section_clients .float_r {
+  width: 60%;
+}
+.section_clients .number {
+  font-size: 3em;
+  font-weight: 700;
+}
+.section_clients .row {
+  margin: 10px 0;
+}
+.section_clients img {
+  vertical-align: middle;
+  max-width: 24%;
+  padding: 10px; /* dimensione immagini */
+}
 
 /*************************************
     SECTION GROWING
