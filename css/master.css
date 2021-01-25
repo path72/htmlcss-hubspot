@@ -41,8 +41,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.shadow {
-  /* box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2); */
+hr {
+  display: inline-block;
+  background-color: #32495b;
 }
 
 /*************************************
@@ -67,7 +68,7 @@ header .float_r ul li:last-child {
 /*************************************
     TOP HEADER
 */
-header .h_top {
+.top_header {
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -76,25 +77,25 @@ header .h_top {
   background-color: #F4F9FD;
   border-bottom: 1px solid #32495b;
 }
-header .h_top .float_l ul li:first-child {
-  border-right: 1px solid #32495b;
+.top_header .float_l ul li:first-child {
+  border-right: 2px solid #32495b;
   line-height: 100%;
 }
-.fa-search:before {
+.top_header .fa-search:before {
   color: #0fa7be;
 }
 
 /*************************************
     BOTTOM HEADER
 */
-header .h_bottom {
+.bottom_header {
   margin-top: 80px; /* fixed top header height */
   background-color: white;
 }
-header .h_bottom img {
+.bottom_header img {
   vertical-align: middle;
 }
-.fa-chevron-down {
+.bottom_header .fa-chevron-down {
   margin-left: 10px;
 }
 
@@ -120,7 +121,7 @@ header .h_bottom img {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 90px;
+  height: 80px;
   background-color: #AFEBE4;
   border-top: 3px solid #33475B;
   border-bottom: 3px solid #33475B;
@@ -131,7 +132,7 @@ header .h_bottom img {
 */
 .section_cube {
   text-align: center;
-  margin: 50px 0 30px 0;
+  margin: 50px 0 30px;
 }
 .section_cube img {
   width: 250px;
@@ -156,7 +157,6 @@ header .h_bottom img {
   margin-right: 2%;
 }
 .b1 .float_r .extra_text hr {
-  display: inline-block;
   width: 58%;
   margin-bottom: 5px;
 }
@@ -171,7 +171,6 @@ header .h_bottom img {
     SECTION 3 BOXES
 */
 .b3 hr {
-  display: inline-block;
   width: 100%;
   margin-top: 30px;
 }
@@ -189,14 +188,13 @@ header .h_bottom img {
     SECTION TABLE
 */
 .section_table {
-  padding: 40px 0;
+  padding: 50px 0;
   text-align: center;
   color: white;
   /* background-color: #00B3B0; */
   background-image: linear-gradient(to right, #00A9B8, #00B2B1, #00B9A8);
 }
 .table {
-  width: 100%;
   margin: 30px 0 50px 0;
 }
 .table .row:first-child {
@@ -205,7 +203,6 @@ header .h_bottom img {
 .table .cell {
   display: inline-block;
   width: 24.6%;
-  height: 50%;
   padding: 20px 25px;
   border-right: 1px solid white;
 }
@@ -216,7 +213,7 @@ header .h_bottom img {
   max-width: 100px;
   height: 33px;
 }
-.table .value {
+.table .figure {
   font-size: 2.5em;
   font-weight: 700;
   margin: 10px;
@@ -226,27 +223,21 @@ header .h_bottom img {
   vertical-align: middle;
   margin-left: 5px;
 }
-.table .text {
-  font-size: 0.75em;
-}
 
 /*************************************
     SECTION CLIENTS
 */
 .section_clients {
   background-color: white;
-  padding: 50px 70px;
+  padding: 50px 0;
 }
 .section_clients .float_l {
   width: 40%;
-  padding-right: 100px;
+  padding: 0 100px 0 60px;
 }
 .section_clients .float_r {
   width: 60%;
-}
-.section_clients .number {
-  font-size: 3em;
-  font-weight: 700;
+  padding-right: 70px;
 }
 .section_clients .row {
   margin: 10px 0;
@@ -364,7 +355,6 @@ li {
 }
 .box.b1 {
   width: 100%;
-  /* padding: 5%; */
 }
 .box.b3 {
   width: 30%;
@@ -390,13 +380,13 @@ li {
 
 .payoff {
   display: inline-block;
-  font-size: 3em;
+  font-size: 2.9em;
   font-weight: bold;
   line-height: 1.3em;
 }
 .title {
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: bold;
 }
 .subtitle {
@@ -407,6 +397,7 @@ li {
 }
 .smalltext {
   font-size: 0.75em;
+  line-height: 1.75em;
 }
 .box_title {
   font-size: 1.4em;
@@ -423,24 +414,24 @@ li {
   border-radius: 5px;
   font-size: 80%;
 }
-.big {
+.btn.big {
   display: inline-block;
   padding: 20px 40px;
 }
-.empty {
+.btn.empty {
   background-color: #FAFCFE;
 }
-.empty:hover {
+.btn.empty:hover {
   background-color: #F4F9FD;
 }
-.filled {
+.btn.filled {
   color: white;
   background-color: #FE785A;
 }
-.filled:hover {
+.btn.filled:hover {
   background-color: #f7917a;
 }
-.filled_grey {
+.btn.filled_grey {
   display: inline-block;
   font-size: 90%;
   color: #32495B;
@@ -448,6 +439,6 @@ li {
   border: 1px solid white;
   background-color: #D6DBDE;
 }
-.filled_grey:hover {
+.btn.filled_grey:hover {
   background-color: #c8c8c8;
 }
