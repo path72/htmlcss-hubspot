@@ -1,5 +1,5 @@
 /* TODO pulizia immagini */
-/* TODO pulizia box */
+/* TODO pulizia texts */
 
 /*************************************
     GENERAL RULES
@@ -45,7 +45,7 @@ a {
   color: inherit;
 }
 .shadow {
-  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  /* box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2); */
 }
 
 /*************************************
@@ -75,6 +75,7 @@ header .h_top {
   top: 0;
   z-index: 9999;
   width: 100%;
+  min-width: 1160px;
   background-color: #F4F9FD;
   border-bottom: 1px solid #32495b;
 }
@@ -142,36 +143,31 @@ header .h_bottom img {
 /*************************************
     SECTION 1 BOX
 */
-.b1_left {
+.b1 .float_l {
   width: 30%;
   padding: 5%;
   text-align: center;
 }
-.b1_right {
-  height: 100%;
+.b1 .float_r {
   width: 70%;
   padding: 5%;
 }
-.b1_right .text_area {
-  height: 100%;
-  margin-bottom: 30px;
-}
-.b1_right .text_area .float_l {
+.b1 .float_r .extra_text h3 {
+  display: inline-block;
   width: 40%;
+  margin-bottom: 20px;
+  margin-right: 2%;
 }
-.b1_right .text_area .float_r {
-  width: 60%;
-  padding-top: 10px;
+.b1 .float_r .extra_text hr {
+  display: inline-block;
+  width: 58%;
+  margin-bottom: 5px;
 }
-.b1_right .h_list li {
+.b1 .float_r .h_list li {
   padding: 0 10px;
 }
-.b1_right .h_list li:first-child {
+.b1 .float_r .h_list li:first-child {
   padding-left: 0;
-}
-.fa-check-circle {
-  color: #FE785A;
-  margin-right: 10px;
 }
 
 /*************************************
@@ -327,7 +323,7 @@ footer ul li a:not(.head,.btn):hover {
   margin: 0 10px;
 }
 .footer_3 ul li {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .footer_3 .copy {
   color: white;
@@ -364,29 +360,36 @@ li {
   display: inline-block;
 }
 
-/***** IMAGES *****/
-
-.section_box img {
-  height: 100px;
-  margin-bottom: 20px;
-}
-
 /***** BOXES *****/
 
-.section_box {
-  margin-bottom: 50px;
-}
 .box {
   border-radius: 5px;
   background-color: white;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  margin-bottom: 50px;
 }
-.b3 {
+.box.b1 {
+  width: 100%;
+  /* padding: 5%; */
+}
+.box.b3 {
   width: 30%;
-  padding: 20px 35px;
+  padding: 20px 30px;
   text-align: center;
 }
-.b3middle {
+.box.b3middle {
   margin: 0 5%;
+}
+.box .fa-check-circle {
+  color: #FE785A;
+  margin-right: 10px;
+}
+
+/***** BOX IMAGES *****/
+
+.box img {
+  height: 100px;
+  margin-bottom: 20px;
 }
 
 /***** TEXTS *****/
