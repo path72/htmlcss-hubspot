@@ -28,10 +28,6 @@ body {
   width: 50%;
   margin: 0 auto;
 }
-.w33 {
-  width: 33.33%;
-  margin: 0 auto;
-}
 .float_l {
   float: left;
 }
@@ -43,11 +39,7 @@ a {
   color: inherit;
 }
 .shadow {
-  /* box-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
   box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
-}
-.tmp_box {
-  border: 1px solid black;
 }
 
 /*************************************
@@ -142,9 +134,6 @@ header .h_bottom img {
     SECTION CUBE
 */
 .section_cube {
-  /* height: 500px;  */
-  /* TODO: remove */
-  /* background-color: #F4F9FD; */
   text-align: center;
   margin: 50px 0;
 }
@@ -156,7 +145,6 @@ header .h_bottom img {
     SECTION 1 BOX
 */
 .b1_left {
-  height: 100%;
   width: 30%;
   padding: 5%;
   text-align: center;
@@ -205,6 +193,9 @@ header .h_bottom img {
 .b3 h3:not(.box_title) {
   margin: 30px 0;
 }
+.b3 .subtitle {
+  min-height: 150px;
+}
 .b3 .btn {
   display: inline-block;
   margin-top: 40px;
@@ -217,20 +208,21 @@ header .h_bottom img {
   padding: 40px 0;
   text-align: center;
   color: white;
-  background-color: #00B3B0;
+  /* background-color: #00B3B0; */
+  background-image: linear-gradient(to right, #00A9B8, #00B2B1, #00B9A8);
 }
 .table {
   width: 100%;
   margin: 50px 0;
 }
-.table .row1 {
+.table .row:first-child {
   border-bottom: 1px solid white;
 }
 .table .cell {
   display: inline-block;
   width: 24.6%;
   height: 50%;
-  padding: 25px;
+  padding: 20px 25px;
   border-right: 1px solid white;
 }
 .table .cell:last-child {
@@ -253,7 +245,6 @@ header .h_bottom img {
 .table .text {
   font-size: 0.75em;
 }
-
 
 /*************************************
     SECTION CLIENTS
@@ -279,7 +270,7 @@ header .h_bottom img {
 .section_clients img {
   vertical-align: middle;
   max-width: 24%;
-  padding: 10px; /* dimensione immagini */
+  padding: 10px; /* image dimensions are here! */
 }
 
 /*************************************
@@ -292,16 +283,58 @@ header .h_bottom img {
 .section_growing .float_l {
   width: 40%;
 }
+.section_growing .float_r {
+  width: 60%;
+  text-align: right;
+}
 .section_growing img {
-  height: 300px;
+  display: inline-block;
+  width: 50%;
 }
 
 /*************************************
     FOOTER
 */
 footer {
-  height: 500px;
+  color: #ccd4dd;
   background-color: #32495B;
+  padding: 40px 0;
+}
+footer ul li a:not(.head,.btn):hover {
+  color: #0294ad;
+}
+.footer_1 {
+  margin-bottom: 40px;
+}
+.footer_1 .col {
+  width: 25%;
+}
+.footer_1 ul li:first-child {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+.footer_1 ul li {
+  margin-bottom: 20px;
+}
+.footer_1 .social a {
+  margin-right: 25px;
+}
+.footer_2 {
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding: 20px 0;
+  margin: 40px 0;
+}
+.footer_2 ul li {
+  margin: 0 10px;
+}
+.footer_3 ul li {
+  margin-left: 10px;
+}
+.footer_3 .copy {
+  color: white;
+  margin: 5px 0;
 }
 
 
@@ -313,9 +346,14 @@ footer {
 
 
 
+
+
 /*************************************
-    LISTS
+    UNIVERSALS
 */
+
+/***** LISTS *****/
+
 ul {
   list-style: none;
 }
@@ -329,41 +367,33 @@ li {
   display: inline-block;
 }
 
-/*************************************
-    IMAGES
-*/
+/***** IMAGES *****/
+
 .section_box img {
   height: 100px;
   margin-bottom: 20px;
 }
 
+/***** BOXES *****/
 
-/*************************************
-    BOXES
-*/
 .section_box {
-  /* height: 350px; */
-  /* TODO: remove height */
   margin-bottom: 50px;
 }
 .box {
-  /* height: 350px; */
-  /* TODO: remove height */
   border-radius: 5px;
   background-color: white;
 }
 .b3 {
   width: 30%;
-  padding: 20px 25px;
+  padding: 20px 35px;
   text-align: center;
 }
 .b3middle {
   margin: 0 5%;
 }
 
-/*************************************
-    TEXTS
-*/
+/***** TEXTS *****/
+
 .title {
   font-size: 2em;
   font-weight: bold;
@@ -384,9 +414,8 @@ li {
   font-size: 0.9em;
 }
 
-/*************************************
-    BUTTONS
-*/
+/***** BUTTONS *****/
+
 .btn {
   padding: 10px;
   border: 1px solid #FE785A;
@@ -408,4 +437,16 @@ li {
 }
 .filled:hover {
   background-color: #f7917a;
+}
+.filled_grey {
+  display: inline-block;
+
+  font-size: 90%;
+  color: #32495B;
+  padding: 10px 10px;
+  border: 1px solid white;
+  background-color: #D6DBDE;
+}
+.filled_grey:hover {
+  background-color: #c8c8c8;
 }
