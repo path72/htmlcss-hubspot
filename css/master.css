@@ -259,8 +259,6 @@ header .h_bottom img {
     SECTION CLIENTS
 */
 .section_clients {
-  height: 600px;
-  /* TODO: remove height */
   background-color: white;
   padding: 50px 70px;
 }
@@ -287,11 +285,24 @@ header .h_bottom img {
 /*************************************
     SECTION GROWING
 */
+.section_growing {
+  background-color: white;
+  padding: 10px 0 60px;
+}
+.section_growing .float_l {
+  width: 40%;
+}
+.section_growing img {
+  height: 300px;
+}
 
 /*************************************
     FOOTER
 */
-
+footer {
+  height: 500px;
+  background-color: #32495B;
+}
 
 
 
