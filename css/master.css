@@ -245,7 +245,8 @@ header .float_r ul li:last-child {
 .section_clients img {
   vertical-align: middle;
   max-width: 24%;
-  padding: 10px; /* image dimensions are here! */
+  padding: 10px;
+  /* image dimensions are here! */
 }
 
 /*************************************
@@ -351,6 +352,7 @@ li {
   border-radius: 5px;
   background-color: white;
   box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
   margin-bottom: 50px;
 }
 .box.b1 {

@@ -1,0 +1,40 @@
+/*************************************
+    TEST
+*/
+.bottom_header ul li {
+  position: relative;
+}
+.bottom_header ul li .overbox:hover .over {
+  display: block;
+  /* visibility: visible; */
+}
+.over {
+  display: none;
+  /* visibility: hidden; */
+  position: absolute;
+  top: 80;
+  right: 0;
+  z-index: 9990;
+  width: 600px;
+  /* height: 400px; */
+  background-color: white;
+  /* box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2); */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.over .row {
+  margin-bottom: 30px;
+}
+.over img {
+  margin: 5px 0;
+}
+.over ul#over_list > li {
+  display:block;
+  line-height: 2em;
+  /* padding: 0 10px; */
+}
+.over ul#over_list > li:first-child {
+  font-weight: 800;
+  margin-left: 10px;
+}
