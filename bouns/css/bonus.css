@@ -57,8 +57,8 @@
   width: 25%;
   padding: 30px 20px;
 }
-.over.software > .float_l .o_arrow {
-  margin-bottom: 40px;
+.over.software > .float_l .o_title:not(:first-child) {
+  margin-top: 40px;
 }
 .over.software > .float_r {
   width: 75%;
@@ -70,8 +70,8 @@
 }
 .over.software > .float_r .area2 {
   height: 20%;
-  padding: 15px;
-  border-top: 1px solid #f1f1f1;
+  padding: 15px 30px;
+  border-top: 2px solid #f2f9ff;
 }
 .over.software > .float_r .area1 .o_box {
   height: 130px;
@@ -87,7 +87,8 @@
 }
 .over.software > .float_r .area1 .o_box:hover {
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
 }
 
 /*************************************
@@ -117,7 +118,6 @@
   margin-bottom: 10px;
 }
 .over .o_arrow {
-  display: inline-block;
   font-size: 0.9em;
   font-weight: bold;
   line-height: 1.5em;
