@@ -204,10 +204,9 @@ header .float_r ul li:last-child {
   display: inline-block;
   width: 24.6%;
   padding: 20px 25px;
-  border-right: 1px solid white;
 }
-.table .cell:last-child {
-  border-right: 0;
+.table .cell:not(:last-child) {
+  border-right: 1px solid white;
 }
 .table img {
   max-width: 100px;
@@ -296,7 +295,7 @@ footer ul li a:not(.head,.btn):hover {
 .footer_1 ul li {
   margin-bottom: 20px;
 }
-.footer_1 .social a {
+.footer_1 .social a:not(:last-child) {
   margin-right: 25px;
 }
 .footer_2 {
